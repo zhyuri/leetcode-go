@@ -10,7 +10,7 @@ func containsNearbyDuplicate(nums []int, k int) bool {
 	integers := make(map[int]int)
 	for i, num := range nums {
 		if j, ok := integers[num]; ok {
-			if math.Abs(float64(i - j)) <= float64(k) {
+			if math.Abs(float64(i-j)) <= float64(k) {
 				return true
 			}
 		}

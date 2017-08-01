@@ -10,3 +10,6 @@ jobs:
     steps:
       - checkout
       - run: go test -v ./...
+notify:
+  webhooks:
+    - url: http://phab.yurilab.com/harbormaster/hook/circleci/
